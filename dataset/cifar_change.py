@@ -9,8 +9,7 @@ from torchvision import transforms
 from pathlib import Path
 from torch.utils.data import DataLoader, Dataset
 
-
-"""from .randaugment import RandAugmentMC"""
+from .randaugment import RandAugmentMC
 
 logger = logging.getLogger(__name__)
 
