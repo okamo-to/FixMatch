@@ -87,14 +87,7 @@ class TransformFixMatch(object):
         weak = self.weak(x)
         strong = self.strong(x)
         return self.normalize(weak), self.normalize(strong)
-
-
-from pathlib import Path
-
-from torch.utils.data import DataLoader, Dataset
-from torchvision import transforms
-from PIL import Image
-
+    
 
 class ImageFolder(Dataset):
     IMG_EXTENSIONS = [".jpg"]
